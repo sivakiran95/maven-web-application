@@ -94,21 +94,34 @@
 	</dependencies>
 	
 	<distributionManagement>
-	
+  
+		<!--	
+ 	<scm>
+            <developerConnection>scm:git:https://github.com/sivakiran95/maven-web-application.git</developerConnection>
+
+	</scm>
+-->
+
 	    <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://54.255.174.111:8081/repository/flipkart-release/</url>
+	      <name>mvn-releases-repository</name>
+	      <url>http://localhost:8082/repository/flipkart-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://54.255.174.111:8081/repository/flipkart-snapshot/</url>
+	      <name>Flipkart Snapshot Repository </name>
+	      <url>http://localhost:8082/repository/flipkart-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
-	
+
+	<scm>
+	    <connection>scm:git:https://github.com/sivakiran95/maven-web-application.git</connection>	
+            <developerConnection>scm:git:https://github.com/sivakiran95/maven-web-application.git</developerConnection>
+
+        </scm>
+
 	<build>
 		<finalName>maven-web-application</finalName>
 		
@@ -146,7 +159,15 @@
 					<wtpContextName>maven-web-application</wtpContextName>
 				</configuration>
 			</plugin>
-			
+
+			<plugin>
+                                 <groupId>org.apache.maven.plugins</groupId>
+                                 <artifactId>maven-release-plugin</artifactId>
+                                 <version>3.0.1</version>
+                        </plugin>
+
+
+
 </plugins>
 	</build>
 	
