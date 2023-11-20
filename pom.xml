@@ -4,7 +4,7 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	
 	<name>maven-web-application</name>
 
@@ -109,8 +109,8 @@
 	</distributionManagement>
 
 	<scm>
-	    <connection>scm:git:ssh:git@github.com:sivakiran95/maven-web-application.git</connection>	
-            <developerConnection>scm:git:ssh:git@github.com:sivakiran95/maven-web-application.git</developerConnection>
+	    <connection>scm:git:https://github.com/sivakiran95/maven-web-application.git</connection>	
+            <developerConnection>scm:git:https://github.com/sivakiran95/maven-web-application.git</developerConnection>
 
           <tag>maven-web-application-0.0.1</tag>
   </scm>
